@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Air Series Tester</string>
+    <string name="pose_image_description">Air Series pose indicator</string>
+    <string name="status_idle">Waiting for RayNeo glasses…</string>
+</resources>
