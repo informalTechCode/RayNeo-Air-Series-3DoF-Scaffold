@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.rayneo.airseries.app-debug-33:/layout_activity_main.xml.flat",
+        "source": "com.rayneo.airseries.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\conno\\.gradle\\daemon\\9.3.0\\com.rayneo.airseries.app-debug-33:\\drawable_ic_air_series.xml.flat",
+        "source": "C:\\Users\\conno\\.gradle\\daemon\\9.3.0\\com.rayneo.airseries.app-main-35:\\drawable\\ic_air_series.xml"
+    },
+    {
+        "merged": "C:\\Users\\conno\\.gradle\\daemon\\9.3.0\\com.rayneo.airseries.app-debug-33:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\conno\\.gradle\\daemon\\9.3.0\\com.rayneo.airseries.app-main-35:\\layout\\activity_main.xml"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string name="app_name">Air Series Tester</string>
+    <string name="pose_image_description">Air Series pose indicator</string>
+    <string name="status_idle">Waiting for RayNeo glasses…</string>
+    <style name="Theme.AirSeriesTester" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">true</item>
+    </style>
+</resources>

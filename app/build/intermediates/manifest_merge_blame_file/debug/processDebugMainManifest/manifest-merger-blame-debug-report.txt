@@ -1,0 +1,128 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rayneo.airseries"
+4    android:versionCode="1"
+5    android:versionName="0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-feature android:name="android.hardware.usb.host" />
+11-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:2:5-62
+11-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:2:19-59
+12
+13    <permission
+13-->[androidx.core:core:1.12.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\28b94b09b7090cd8a1cd6bde95b4ff08\workspace\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.rayneo.airseries.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.12.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\28b94b09b7090cd8a1cd6bde95b4ff08\workspace\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.12.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\28b94b09b7090cd8a1cd6bde95b4ff08\workspace\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.rayneo.airseries.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.12.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\28b94b09b7090cd8a1cd6bde95b4ff08\workspace\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.12.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\28b94b09b7090cd8a1cd6bde95b4ff08\workspace\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:4:5-18:19
+20        android:allowBackup="true"
+20-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:5:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.12.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\28b94b09b7090cd8a1cd6bde95b4ff08\workspace\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:label="Air Series Tester"
+24-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:6:9-42
+25        android:testOnly="true"
+26        android:theme="@style/Theme.AirSeriesTester" >
+26-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:7:9-53
+27        <activity
+27-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:8:9-17:20
+28            android:name="com.rayneo.airseries.MainActivity"
+28-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:9:13-41
+29            android:configChanges="orientation|screenSize|keyboardHidden"
+29-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:12:13-74
+30            android:exported="true"
+30-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:10:13-36
+31            android:screenOrientation="landscape" >
+31-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:11:13-50
+32            <intent-filter>
+32-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:13:13-16:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:14:17-69
+33-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:14:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:15:17-77
+35-->C:\Users\conno\Downloads\mercuryandroidsdk\__MACOSX\AirSeriesTester\app\src\main\AndroidManifest.xml:15:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <provider
+39-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+40            android:name="androidx.startup.InitializationProvider"
+40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+41            android:authorities="com.rayneo.airseries.androidx-startup"
+41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+42            android:exported="false" >
+42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+43            <meta-data
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+44                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+45                android:value="androidx.startup" />
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\93e1800d5eed67834f4ac3846583a4e5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+46            <meta-data
+46-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\0c24201f5ae2de00f8877281bc634c5e\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+47                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\0c24201f5ae2de00f8877281bc634c5e\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+48                android:value="androidx.startup" />
+48-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\0c24201f5ae2de00f8877281bc634c5e\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+49            <meta-data
+49-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+50-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+51                android:value="androidx.startup" />
+51-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+52        </provider>
+53
+54        <receiver
+54-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+55            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+56            android:directBootAware="false"
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+57            android:enabled="true"
+57-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+58            android:exported="true"
+58-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+59            android:permission="android.permission.DUMP" >
+59-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+60            <intent-filter>
+60-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+61                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+61-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+62            </intent-filter>
+63            <intent-filter>
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+64                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+65            </intent-filter>
+66            <intent-filter>
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+67                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+68            </intent-filter>
+69            <intent-filter>
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+70                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\conno\.gradle\caches\9.3.0\transforms\ff9bf9d18ed3cc4fa1976ba0ddc3f399\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+71            </intent-filter>
+72        </receiver>
+73    </application>
+74
+75</manifest>
