@@ -4,7 +4,7 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "org.freedesktop.monado.rayneotest",
+  "applicationId": "com.informalcode.rayneoairtest",
   "variantName": "debug",
   "elements": [
     {

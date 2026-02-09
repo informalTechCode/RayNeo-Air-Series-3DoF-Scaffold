@@ -1,10 +1,10 @@
-#Mon Feb 09 12:30:41 MST 2026
-base.0=C\:\\Users\\conno\\Downloads\\monado-80c87873622f047f6dec7facc869d670b789c252\\monado-80c87873622f047f6dec7facc869d670b789c252\\testapp\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\conno\\Downloads\\monado-80c87873622f047f6dec7facc869d670b789c252\\monado-80c87873622f047f6dec7facc869d670b789c252\\testapp\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\conno\\Downloads\\monado-80c87873622f047f6dec7facc869d670b789c252\\monado-80c87873622f047f6dec7facc869d670b789c252\\testapp\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+#Mon Feb 09 12:52:27 MST 2026
+base.0=C\:\\Users\\conno\\Desktop\\AirSeriesTester\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\conno\\Desktop\\AirSeriesTester\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\conno\\Desktop\\AirSeriesTester\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
-path.2=5/classes.dex
+path.2=12/classes.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.freedesktop.monado.rayneotest"
+    package="com.informalcode.rayneoairtest"
     android:versionCode="1"
     android:versionName="0.1.0" >
 
     <uses-sdk
         android:minSdkVersion="26"
-        android:targetSdkVersion="31" />
+        android:targetSdkVersion="35" />
 
     <uses-feature
         android:name="android.hardware.usb.host"
@@ -16,10 +16,10 @@
         android:required="true" />
 
     <permission
-        android:name="org.freedesktop.monado.rayneotest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.informalcode.rayneoairtest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="org.freedesktop.monado.rayneotest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.informalcode.rayneoairtest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="false"
@@ -30,7 +30,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RayNeoTest" >
         <activity
-            android:name="org.freedesktop.monado.rayneotest.MainActivity"
+            android:name="com.informalcode.rayneoairtest.MainActivity"
             android:exported="true"
             android:screenOrientation="sensorLandscape" >
             <intent-filter>
@@ -42,7 +42,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="org.freedesktop.monado.rayneotest.androidx-startup"
+            android:authorities="com.informalcode.rayneoairtest.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

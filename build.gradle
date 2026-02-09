@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'org.freedesktop.monado.rayneotest'
+    namespace 'com.informalcode.rayneoairtest'
     compileSdk 35
 
     defaultConfig {
-        applicationId 'org.freedesktop.monado.rayneotest'
+        applicationId 'com.informalcode.rayneoairtest'
         minSdk 26
-        targetSdk 31
+        targetSdk 35
         versionCode 1
         versionName "0.1.0"
     }

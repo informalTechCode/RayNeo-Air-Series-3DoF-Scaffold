@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.freedesktop.monado.rayneotest-mergeDebugResources-22:/values-fr/values-fr.xml",
+            "outputFile": "com.informalcode.rayneoairtest-mergeDebugResources-22:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\conno\\.gradle\\caches\\9.1.0\\transforms\\cd9d4207cf3a841dadfd9a8783f53022\\workspace\\transformed\\core-1.15.0\\res\\values-fr\\values-fr.xml",

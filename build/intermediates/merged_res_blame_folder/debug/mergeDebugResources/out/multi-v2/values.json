@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.freedesktop.monado.rayneotest-mergeDebugResources-22:/values/values.xml",
+            "outputFile": "com.informalcode.rayneoairtest-mergeDebugResources-22:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\conno\\.gradle\\caches\\9.1.0\\transforms\\f3de693c95b73349638f659146033e6a\\workspace\\transformed\\lifecycle-runtime-2.6.2\\res\\values\\values.xml",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\conno\\Downloads\\monado-80c87873622f047f6dec7facc869d670b789c252\\monado-80c87873622f047f6dec7facc869d670b789c252\\testapp\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\conno\\Desktop\\AirSeriesTester\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -93,6 +93,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\conno\\Desktop\\AirSeriesTester\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "299",
+                        "startColumns": "4",
+                        "startOffsets": "19429",
+                        "endColumns": "53",
+                        "endOffsets": "19478"
+                    }
+                },
+                {
                     "source": "C:\\Users\\conno\\.gradle\\caches\\9.1.0\\transforms\\385f7f7e2703bed38456a0bbfcf5017d\\workspace\\transformed\\savedstate-1.2.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -141,23 +158,6 @@
                         "startOffsets": "15852,16939",
                         "endColumns": "41,59",
                         "endOffsets": "15889,16994"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\conno\\Downloads\\monado-80c87873622f047f6dec7facc869d670b789c252\\monado-80c87873622f047f6dec7facc869d670b789c252\\testapp\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "53",
-                        "endOffsets": "104"
-                    },
-                    "to": {
-                        "startLines": "299",
-                        "startColumns": "4",
-                        "startOffsets": "19429",
-                        "endColumns": "53",
-                        "endOffsets": "19478"
                     }
                 },
                 {

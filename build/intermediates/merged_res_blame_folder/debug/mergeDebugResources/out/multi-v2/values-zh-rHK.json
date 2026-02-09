@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "org.freedesktop.monado.rayneotest-mergeDebugResources-22:/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "com.informalcode.rayneoairtest-mergeDebugResources-22:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "C:\\Users\\conno\\.gradle\\caches\\9.1.0\\transforms\\3cbd5d6860d45b3550863e0fa6b8712c\\workspace\\transformed\\appcompat-1.7.0\\res\\values-zh-rHK\\values-zh-rHK.xml",
