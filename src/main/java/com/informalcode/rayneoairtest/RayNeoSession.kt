@@ -165,7 +165,8 @@ class RayNeoSession(
             )
 
             val filter = OrientationFilter(imuRotX)
-            if (!initializeSensorPose(filter)) {
+            val firstOrientationAtMs = SystemClock.elapsedRealtime() + SENSOR_WARMUP_DELAY_MS
+            if (!initializeSensorPose(filter, firstOrientationAtMs)) {
                 postStatus("No initial IMU sample")
                 return
             }
@@ -179,21 +180,23 @@ class RayNeoSession(
             }
         } finally {
             bestEffortSend(RayNeoProtocol.CMD_CLOSE_IMU)
-            bestEffortSend(RayNeoProtocol.CMD_SWITCH_TO_2D)
             closeConnection()
             running.set(false)
             ioThread = null
         }
     }
 
-    private fun initializeSensorPose(filter: OrientationFilter): Boolean {
-        postStatus("Waiting for initial IMU sample...")
-        val deadline = SystemClock.elapsedRealtime() + 1500
+    private fun initializeSensorPose(filter: OrientationFilter, firstOrientationAtMs: Long): Boolean {
+        postStatus("Waiting for IMU warmup...")
+        val deadline = SystemClock.elapsedRealtime() + 4000
         while (running.get() && SystemClock.elapsedRealtime() < deadline) {
             val pkt = readPacket(200) ?: continue
             if (pkt is RayNeoPacket.Sensor) {
-                postOrientation(filter.update(pkt.sample))
-                return true
+                val quat = filter.update(pkt.sample)
+                if (SystemClock.elapsedRealtime() >= firstOrientationAtMs) {
+                    postOrientation(quat)
+                    return true
+                }
             }
         }
         return false
@@ -207,10 +210,7 @@ class RayNeoSession(
         val info = waitForDeviceInfo(2500) ?: return null
 
         if (info.sideBySideEnabled) {
-            postStatus("Disabling side-by-side mode...")
-            if (sendCommand(RayNeoProtocol.CMD_SWITCH_TO_2D)) {
-                waitForAck(RayNeoProtocol.CMD_SWITCH_TO_2D, 1200)
-            }
+            postStatus("Device reports side-by-side mode enabled")
         }
 
         if (!sendCommand(RayNeoProtocol.CMD_OPEN_IMU)) {
@@ -357,5 +357,6 @@ class RayNeoSession(
 
     private companion object {
         const val ACTION_USB_PERMISSION = "com.informalcode.rayneoairtest.USB_PERMISSION"
+        const val SENSOR_WARMUP_DELAY_MS = 2000L
     }
 }

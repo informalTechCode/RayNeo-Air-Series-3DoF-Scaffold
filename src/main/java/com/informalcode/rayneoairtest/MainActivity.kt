@@ -3,6 +3,7 @@ package com.informalcode.rayneoairtest
 import android.graphics.Color
 import android.opengl.GLSurfaceView
 import android.os.Bundle
+import android.os.SystemClock
 import android.util.TypedValue
 import android.view.Gravity
 import android.widget.Button
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var recenterButton: Button
     private lateinit var rayNeoSession: RayNeoSession
     private var shouldAutoRecenter = true
+    private var autoRecenterAfterMs = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -82,8 +84,8 @@ class MainActivity : AppCompatActivity() {
             onStatus = { msg -> statusText.text = msg },
             onOrientation = { quat ->
                 renderer.setOrientation(quat)
-                if (shouldAutoRecenter) {
-                    renderer.recenter()
+                if (shouldAutoRecenter && SystemClock.elapsedRealtime() >= autoRecenterAfterMs) {
+                    renderer.recenterYawOnly()
                     shouldAutoRecenter = false
                     statusText.text = "Sensor initialized and centered"
                 }
@@ -95,6 +97,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         shouldAutoRecenter = true
+        autoRecenterAfterMs = SystemClock.elapsedRealtime() + AUTO_RECENTER_DELAY_MS
         glView.onResume()
         glView.requestRender()
         rayNeoSession.start()
@@ -104,5 +107,9 @@ class MainActivity : AppCompatActivity() {
         rayNeoSession.stop()
         glView.onPause()
         super.onPause()
+    }
+
+    private companion object {
+        const val AUTO_RECENTER_DELAY_MS = 2000L
     }
 }

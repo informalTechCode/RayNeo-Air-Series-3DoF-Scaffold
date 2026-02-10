@@ -9,6 +9,9 @@ import java.nio.FloatBuffer
 import java.nio.ShortBuffer
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
+import kotlin.math.atan2
+import kotlin.math.cos
+import kotlin.math.sin
 import kotlin.math.sqrt
 
 class CubeRenderer : GLSurfaceView.Renderer {
@@ -77,6 +80,25 @@ class CubeRenderer : GLSurfaceView.Renderer {
             recenterReference[1] = orientation[1]
             recenterReference[2] = orientation[2]
             recenterReference[3] = orientation[3]
+        }
+    }
+
+    fun recenterYawOnly() {
+        synchronized(orientationLock) {
+            // Recenter only yaw. Including pitch/roll at init can make content jump vertically.
+            val w = orientation[0]
+            val x = orientation[1]
+            val y = orientation[2]
+            val z = orientation[3]
+            val yaw = atan2(
+                2f * (w * y + x * z),
+                1f - 2f * (x * x + y * y)
+            )
+            val half = 0.5f * yaw
+            recenterReference[0] = cos(half)
+            recenterReference[1] = 0f
+            recenterReference[2] = sin(half)
+            recenterReference[3] = 0f
         }
     }
 
